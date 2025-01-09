@@ -46,6 +46,7 @@ function Friend({ friendObj }) {
       <h3>{friendObj.name}</h3>
 
       <Balance balanceAmount={friendObj.balance} friendName={friendObj.name} />
+      <button className="button">Select</button>
     </li>
   );
 }
