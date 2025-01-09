@@ -42,7 +42,7 @@ export default function FormSplitBill({ friend, onBillSplit }) {
     }
 
     /* update the balance for the friend */
-    const updatedFriend = { ...friend, balance: balance };
+    const updatedFriend = { ...friend, balance: friend.balance + balance };
     onBillSplit(updatedFriend);
   }
 
