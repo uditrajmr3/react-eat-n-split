@@ -51,6 +51,7 @@ export default function App() {
       {/* show bill slpit form only when a friend is selected  */}
       {selectedFriend && (
         <FormSplitBill
+          key={selectedFriend.id}
           friend={selectedFriend}
           onBillSplit={updateExistingFriend}
         />
